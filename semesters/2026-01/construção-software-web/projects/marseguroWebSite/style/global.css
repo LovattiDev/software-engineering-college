@@ -1,25 +1,63 @@
 /* =========================
+   GLOBAL
+   ========================= */ 
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f8f8f6;
+}
+
+h1 {
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    color: #0F2E33;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3E4E52;
+}
+
+small, span, label {
+    color: #6B7C80;
+}
+
+a, strong {
+    color: #2F5D62;
+}
+
+/* =========================
    SEÇÃO HERO (container geral)
    ========================= */
 .hero {
-  padding: 60px;               
-  background: #f8f8f6;         
-  font-family: sans-serif;     
+    padding-left: 100px;  
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
+
 /* =========================
    TOPO DO HERO (texto + CTA)
    ========================= */
 .hero-top {
-  display: flex;               
-  justify-content: space-between; 
-  align-items: flex-start;     
-  margin-bottom: 40px;         
+    display: flex;               
+    justify-content: space-between; 
+    align-items: flex-start;     
+    margin-bottom: 115px;         
 }
 
 /* Título principal */
 .hero h1 {
-  font-size: 56px;             
-  line-height: 1.1;            
+    font-size: 55px;
+    line-height: 1.1; 
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: 200;
+    color: #2f5d62;
+    margin-top: -30px;
 }
 
 /* Bloco de texto + botão */
@@ -29,55 +67,57 @@
 
 /* Botão de ação (Booking) */
 .hero-cta button {
-  margin-top: 16px;            
-  padding: 10px 24px;          
-  border-radius: 20px;         
-  border: none;                
-  background: #2f5d62;         
-  color: white;                
-  cursor: pointer;             
+    margin-top: 16px;            
+    padding: 10px 24px;          
+    border-radius: 20px;         
+    border: none;                
+    background: #2f5d62;         
+    color: white;                
+    cursor: pointer;             
 }
 
 /* =========================
    IMAGEM PRINCIPAL
    ========================= */
 .hero-image {
-  position: relative;          
+    position: relative;          
 }
 
 /* Estilo do video */
 .hero-video {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;     
-  border-radius: 24px;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;     
+    border-radius: 24px;
 }
 
 /* =========================
    CARD DE BUSCA (flutuante)
    ========================= */
 .search-card {
-  position: absolute;          
-  bottom: -30px;               
-  left: 50%;                  
-  transform: translateX(-50%); 
+    position: absolute;          
+    bottom: -30px;               
+    left: 50%;                  
+    transform: translateX(-50%); 
 
-  display: flex;               
-  gap: 24px;                   
-  align-items: center;         
+    display: flex;               
+    gap: 24px;                   
+    align-items: center;         
 
-  background: white;           
-  padding: 20px 24px;          
-  border-radius: 20px;        
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+    background: white;
+    padding: 20px 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* Texto de cada item do card */
 .search-card .item {
-  display: flex;
-  flex-direction: column;   
-  align-items: flex-start;  
-  gap: 4px;                 
-  font-size: 15px;
-  line-height: 1.4;           
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+    color: #3E4E52;
 }
