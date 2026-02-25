@@ -1,0 +1,97 @@
+/* =========================
+   SOCIAL PURPOSE SECTION
+========================= */
+
+.social-purpose-section {
+    position: relative;
+    width: min(47rem, 90%);
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-block: min(20vh, 3rem);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    padding: 60px 0 95px;
+}
+
+.swiper-slide {
+    width: 10rem;
+    height: 21rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.swiper-slide .slide-content {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =========================
+   NAVIGATION BUTTONS
+========================= */
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 47%;
+
+    width: 50px;
+    height: 50px;
+
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
+
+    display: none; /* mobile first */
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev {
+    left: -30px;
+}
+
+.swiper-button-next {
+    right: -30px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none !important;
+}
+
+.swiper-button-prev .bx,
+.swiper-button-next .bx {
+    font-size: 25px;
+    color: #0F2E33;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 760px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: flex;
+    }
+}

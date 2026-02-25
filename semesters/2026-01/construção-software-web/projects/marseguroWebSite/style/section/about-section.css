@@ -1,0 +1,97 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    padding: 80px 60px;
+    background-color: #F7F9FA;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* TÍTULO */
+.about-title {
+    text-align: left;
+}
+
+.about-subtitle {
+    margin-bottom: 40px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.about-main-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* CARD IMAGEM */
+.about-image-card {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+.about-image-card:hover {
+    background-color: #2f5d62;
+    transition: 0.8s;
+}
+
+/* IMAGEM */
+.about-main-content img {
+    width: 380px;
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.about-text {
+    flex: 1;
+    color: #3E4E52;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* LISTA */
+.about-list h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #0F2E33;
+}
+
+.about-list ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.about-list li {
+    font-size: 15px;
+    padding: 6px 0;
+    color: #5F7377;
+    transition: 0.5s;
+}
+
+.about-list li:hover {
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.about-list li strong {
+    margin-right: 15px;
+    display: inline-block;
+}

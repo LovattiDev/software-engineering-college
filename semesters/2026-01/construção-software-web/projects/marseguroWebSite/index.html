@@ -6,11 +6,39 @@
     <title>MarSeguro</title>
 
     <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/section/hero-section.css">
+    <link rel="stylesheet" href="style/section/about-section.css">
+    <link rel="stylesheet" href="style/section/social-purpose-section.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    />
+
 </head>
 <body>
     
+    <!-- HEADER -->
+     <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#goal">Objetivo</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#app">App</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
+            </ul>
+        </nav>
+     </header>
+
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-container">
 
             <div class="hero-top">
@@ -34,7 +62,7 @@
         <div class="hero-image">
             <video 
                 class="hero-video"
-                src="assets/boat-video-hero.mp4"
+                src="assets/hero-boat-video.mp4"
                 autoplay
                 muted
                 loop
@@ -52,5 +80,174 @@
         </div>
     </section>
 
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-container">
+
+            <div class="about-main-content">
+
+                <div class="about-image-card">
+                    <img src="assets/about-image.png">
+                </div>
+
+                <div class="about-text">
+
+                    <h1 class="about-title">
+                        Onde tudo começou
+                    </h1>
+                    <h2 class="about-subtitle">
+                        A origem do projeto que ganhou o brasil
+                    </h2>
+
+                    <p>
+                        O projeto teve início no final de 2023, a partir da observação de recorrentes
+                        acidentes com embarcações no litoral sul do Espírito Santo. A análise de dados
+                        oficiais permitiu dimensionar a gravidade do problema, inicialmente por meio de
+                        um dashboard com mapa de acidentes no Brasil. A partir desse diagnóstico, foi
+                        desenvolvido o aplicativo MarSeguro, com foco na prevenção de acidentes e no apoio
+                        à navegação dos pescadores artesanais da região.
+                    </p>
+
+                    <div class="about-list">
+                        <h2>Reconhecimentos</h2>
+                        
+                        <ul>
+                            <li><strong>FINALISTA</strong>MOSTRATEC — Mostra Internacional de Ciência e Tecnologia</li>
+                            <li><strong>FINALISTA</strong>FEBRACE — Feira Brasileira de Ciências e Engenharia</li>
+                            <li><strong>2º LUGAR</strong> Prêmio Mentalidade Marítima — Marinha do Brasil</li>
+                            <li><strong>1º LUGAR</strong>FECINC — Feira de Ciências e Inovação Capixaba</li>
+                            <li><strong>APRESENTAÇÃO TÉCNICA</strong>80º SOEA — Semana Oficial da Engenharia e da Agronomia</li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Objetivo social -->
+    <section class="social-purpose-section">
+        <div class="swiper-container">
+            <div>
+                <h3>Terminar seção</h3>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <a 
+                                href="https://g1.globo.com/es/espirito-santo/sul-es/noticia/2025/04/23/aplicativo-desenvolvido-por-estudantes-do-es-ajuda-pescadores-a-evitar-areas-de-risco-e-acidentes-no-mar.ghtml"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="slide-link">
+
+                                <img src="assets/teste.jpg" alt="Descrição do slide">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/teste.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/teste.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/teste.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/teste.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="bx bx-left-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="bx bx-right-arrow-alt"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        var swiper = new Swiper(".swiper",{
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            coverflowEffect:{
+                rotate:0,
+                stretch:0,
+                depth:100,
+                modifier:4,
+                slideShadows:true
+            },
+            loop:true,
+            navigation:{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            keyboard:{
+                enabled:true
+            },
+            mousewheel:{
+                thresholdDelta:70
+            },
+            breakpoints:{
+                560:{
+                    slidesPerView: 2.5
+                },
+                768:{
+                    slidesPerView: 3
+                },
+                1024:{
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+    <!-- Dashboard -->
+    <section>
+        <h3>Seção - Dashboard</h3>
+    </section>
+
+    <!-- App -->
+    <section>
+        <h3>Seção - App</h3>
+    </section>
+
+    <!-- How it works -->
+    <section>
+        <h3>Seção - How it works</h3>
+    </section>
+
+    <!-- Tecnologias -->
+    <section>
+        <h3>Seção - Tecnologias</h3>
+    </section>
+
+    <!-- Contato -->
+    <section>
+        <h3>Seção - Contato</h3>
+    </section>
 </body>
 </html>

@@ -1,0 +1,79 @@
+/* =========================
+   SEÇÃO HERO (container geral)
+   ========================= */
+.hero {
+    padding: 100px;
+    padding-top: 130px;
+}
+
+/* =========================
+   TOPO DO HERO (texto + CTA)
+   ========================= */
+.hero-top {
+    display: flex;               
+    justify-content: space-between; 
+    align-items: flex-start;     
+    margin-bottom: 80px;         
+}
+
+/* Bloco de texto + botão */
+.hero-cta {
+  max-width: 320px;            
+}
+
+/* Botão de ação (Booking) */
+.hero-cta button {
+    margin-top: 16px;            
+    padding: 10px 24px;          
+    border-radius: 20px;         
+    border: none;                
+    background: #2f5d62;         
+    color: white;                
+    cursor: pointer;             
+}
+
+/* =========================
+   IMAGEM PRINCIPAL
+   ========================= */
+.hero-image {
+    position: relative;          
+}
+
+/* Estilo do video */
+.hero-video {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;     
+    border-radius: 24px;
+}
+
+/* =========================
+   CARD DE BUSCA (flutuante)
+   ========================= */
+.search-card {
+    position: absolute;          
+    bottom: -30px;               
+    left: 50%;                  
+    transform: translateX(-50%); 
+
+    display: flex;               
+    gap: 24px;                   
+    align-items: center;         
+
+    background: white;
+    padding: 20px 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Texto de cada item do card */
+.search-card .item {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+    color: #3E4E52;
+}

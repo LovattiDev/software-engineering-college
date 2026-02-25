@@ -1,0 +1,45 @@
+/* =========================
+   HEADER
+========================= */
+.header {
+    position: fixed;
+    top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+/* NAV CONTAINER */
+.nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 999px;
+    padding: 10px 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* NAV LIST */
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+/* NAV LINKS */
+.nav-list a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #000;
+}
+
+/* NAV LINK ATIVO */
+.nav-list a.active {
+    color: #000;
+    font-weight: 500;
+}
