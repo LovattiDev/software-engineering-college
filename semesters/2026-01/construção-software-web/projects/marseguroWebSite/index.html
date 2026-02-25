@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="style/section/hero-section.css">
     <link rel="stylesheet" href="style/section/about-section.css">
     <link rel="stylesheet" href="style/section/social-purpose-section.css">
+    <link rel="stylesheet" href="style/section/contact-section.css">
 
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link
-        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
 
 </head>
@@ -29,10 +30,11 @@
             <ul class="nav-list">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#goal">Objetivo</a></li>
+                <li><a href="#social-purpose">Objetivo</a></li>
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#app">App</a></li>
                 <li><a href="#skills">Tecnologias</a></li>
+                <li><a href="#contact-section">Contato</a></li>
             </ul>
         </nav>
      </header>
@@ -93,7 +95,7 @@
                 <div class="about-text">
 
                     <h1 class="about-title">
-                        Onde tudo começou
+                        Onde Tudo Começou
                     </h1>
                     <h2 class="about-subtitle">
                         A origem do projeto que ganhou o brasil
@@ -127,103 +129,106 @@
     </section>
 
     <!-- Objetivo social -->
-    <section class="social-purpose-section">
-        <div class="swiper-container">
-            <div>
-                <h3>Terminar seção</h3>
+    <section id="social-purpose" class="social-purpose-section">
+
+        <!-- TOP -->
+        <div class="social-purpose-top">
+
+            <div class="social-purpose-title">
+                <h1>Para Quem Vive Do Mar</h1>
+                <h2 id="typing-text">Pescadores Artesanais</h2>
             </div>
-
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <a 
-                                href="https://g1.globo.com/es/espirito-santo/sul-es/noticia/2025/04/23/aplicativo-desenvolvido-por-estudantes-do-es-ajuda-pescadores-a-evitar-areas-de-risco-e-acidentes-no-mar.ghtml"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="slide-link">
-
-                                <img src="assets/teste.jpg" alt="Descrição do slide">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <img src="assets/teste.jpg">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <img src="assets/teste.jpg">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <img src="assets/teste.jpg">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <img src="assets/teste.jpg">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="swiper-button-prev">
-                <i class="bx bx-left-arrow-alt"></i>
-            </div>
-            <div class="swiper-button-next">
-                <i class="bx bx-right-arrow-alt"></i>
-            </div>
-
+            
+            <p>
+                Acidentes marítimos fazem parte da realidade de milhares de pescadores
+                artesanais no Brasil. <br>
+                O MarSeguro surge como uma ferramenta de apoio, unindo tecnologia,
+                informação e prevenção no dia a dia da navegação.
+            </p>
         </div>
+
+        <!-- BOTTOM -->
+        <div class="social-purpose-bottom">
+            <div class="swiper-container">
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- G1 -->
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <a 
+                                    href="https://g1.globo.com/es/espirito-santo/sul-es/noticia/2025/04/23/aplicativo-desenvolvido-por-estudantes-do-es-ajuda-pescadores-a-evitar-areas-de-risco-e-acidentes-no-mar.ghtml"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="slide-link">
+                                    <img src="assets/swiper-imgs/swiper-img-1.png" alt="Descrição do slide">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- FEBRACE -->
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <a 
+                                    href="https://virtual.febrace.org.br/2025/ENG/6453/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="slide-link">
+                                    <img src="assets/swiper-imgs/swiper-img-2.png" alt="Descrição do slide">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Espírito Santo Notícias -->
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <a 
+                                    href="https://www.espiritosantonoticias.com.br/tecnologia-capixaba-ganha-os-mares-aplicativo-do-ifes-piuma-vira-destaque-na-tv-gazeta/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="slide-link">
+                                    <img src="assets/swiper-imgs/swiper-img-3.png" alt="Descrição do slide">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ES em Rede -->
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <a 
+                                    href="https://esemrede.com.br/estudantes-do-espirito-santo-criam-app-que-ajuda-pescadores-a-evitarem-areas-perigosas-no-mar-e-reduzirem-acidentes/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="slide-link">
+                                    <img src="assets/swiper-imgs/swiper-img-4.png" alt="Descrição do slide">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ESX -->
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <a 
+                                    href="https://agifes.ifes.edu.br/ifes-abre-participacao-no-esx-2025-com-projetos-inovadores-e-protagonismo-estudantil/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="slide-link">
+                                    <img src="assets/swiper-imgs/swiper-img-5.png" alt="Descrição do slide">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="bx bx-left-arrow-alt"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="bx bx-right-arrow-alt"></i>
+                </div>
+
+            </div>
+        </div>
+
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script type="text/javascript">
-        var swiper = new Swiper(".swiper",{
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            coverflowEffect:{
-                rotate:0,
-                stretch:0,
-                depth:100,
-                modifier:4,
-                slideShadows:true
-            },
-            loop:true,
-            navigation:{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            keyboard:{
-                enabled:true
-            },
-            mousewheel:{
-                thresholdDelta:70
-            },
-            breakpoints:{
-                560:{
-                    slidesPerView: 2.5
-                },
-                768:{
-                    slidesPerView: 3
-                },
-                1024:{
-                    slidesPerView: 3
-                }
-            }
-        });
-    </script>
-
-
-
-
 
     <!-- Dashboard -->
     <section>
@@ -246,8 +251,78 @@
     </section>
 
     <!-- Contato -->
-    <section>
-        <h3>Seção - Contato</h3>
+    <section id="contact-section" class="contact-section">
+        <div class="contact-container">
+
+            <div class="contatc-title">
+                <h1>Entre em Contato</h1>
+                <h2>Siga Nossas Redes</h2>
+            </div>
+
+            <div class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Seu nome completo"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="seu@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Escreva sua mensagem..."
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </div>
+
+            <div class="contact-social-medias">
+                <ul class="contact-social-media-list">
+                    <li>
+                        <a href="https://www.instagram.com/mar.seguro_/">
+                            <i class="bx bxl-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/marseguro-tecnologia-e-informa%C3%A7%C3%A3o/">
+                            <i class="bx bxl-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/social-purpose-swiper.js"></script>
+
+    <script src="script/social-purpose-typing.js"></script>
+
 </body>
 </html>

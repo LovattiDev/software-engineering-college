@@ -30,6 +30,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     color: #3E4E52;
+    text-align: justify;
 }
 
 small, span, label {

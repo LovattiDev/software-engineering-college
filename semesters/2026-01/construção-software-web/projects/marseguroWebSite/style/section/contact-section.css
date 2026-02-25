@@ -1,0 +1,85 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: white;
+    padding: 20px 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #0a2540;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.8;
+}
+
+/* =========================
+   SOCIAL MEDIAS
+========================= */
+.contact-social-medias {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-social-media-list {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+}
+
+.contact-social-media-list li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.contact-social-media-list li i {
+    font-size: 22px;
+    color: #0F2E33;
+}
+
+.contact-social-media-list li span {
+    font-size: 16px;
+    color: #0F2E33;
+}
