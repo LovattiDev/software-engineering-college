@@ -1,0 +1,21 @@
+/* =========================
+   DASHBOARD
+========================= */ 
+.dashboard-container {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   DASHBOARD
+========================= */ 
+.dashboard-iframe {
+    margin-top: 40px;
+}
+
+.dashboard-iframe iframe {
+    width: 800px;
+    height: 600px;
+}
