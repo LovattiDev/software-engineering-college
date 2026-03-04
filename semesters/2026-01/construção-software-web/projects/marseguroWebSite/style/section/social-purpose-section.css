@@ -47,6 +47,17 @@
     margin-bottom: 24px;
 }
 
+#social-purpose h2::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
 /* =========================
    BOTTOM / SWIPER
 ========================= */
