@@ -1,0 +1,36 @@
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-top {
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.skills-item {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+.skills-item:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+}
+
+.skills-item img {
+    max-width: 100%;
+    height: auto;
+}

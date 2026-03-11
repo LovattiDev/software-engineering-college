@@ -1,0 +1,29 @@
+footer {
+    padding: 60px;
+    background: #e7f3ee;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav-list a {
+    text-decoration: none;
+}
+
+.footer-container span {
+    font-size: 15px;
+}
+
+.footer-dev-name-span {
+    color: #0F2E33;
+}
