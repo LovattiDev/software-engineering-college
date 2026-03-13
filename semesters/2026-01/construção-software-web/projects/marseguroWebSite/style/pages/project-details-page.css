@@ -1,0 +1,86 @@
+/* =========================
+   PROJECT DETAIL PAGE
+========================= */ 
+.container {
+    padding: 100px;
+    padding-top: 130px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+
+    align-items: flex-start;
+}
+
+.video-content {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+.video-content:hover {
+    background-color: #2f5d62;
+    transition: 0.8s;
+}
+
+.video-content video {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.text p {
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.btn {
+    width: 140px;
+    height: 45px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #3E4E52;
+    outline: none;
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+.btn span {
+    color: #2f5d62;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #2f5d62;
+    stroke-dasharray: 120 400;
+    stroke-dashoffset: 120;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    background: #2f5d62;
+}
+
+.btn:hover span {
+    color: white;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -400;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

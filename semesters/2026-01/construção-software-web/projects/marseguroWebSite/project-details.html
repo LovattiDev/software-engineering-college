@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/pages/project-details-page.css">
 
 </head>
 <body>
@@ -16,19 +17,82 @@
      <header class="header">
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#social-purpose">Objetivo</a></li>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#app">App</a></li>
-                <li><a href="#skills">Tecnologias</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#social-purpose">Objetivo</a></li>
+                <li><a href="index.html#dashboard">Dashboard</a></li>
+                <li><a href="index.html#app">App</a></li>
+                <li><a href="index.html#skills">Tecnologias</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
             </ul>
         </nav>
      </header>
 
+     <!-- Main Content -->
      <section>
-        <h1>marseguro</h1>
+        <div class="container">
+
+            <div class="text">
+                <div class="title">
+                    <h1>Conheça Melhor o Projeto</h1>
+                    <h2>Arquivos e Video Explicativo</h2>
+                </div>
+                <p>
+                    Em nossa região, acidentes envolvendo embarcações pesqueiras são uma preocupação
+                    constante, dado o elevado número de pescadores que dependem da pesca para sua
+                    subsistência. Notícias frequentes sobre acidentes na costa reforçam a necessidade de medidas
+                    que melhorem a segurança desses profissionais no mar. Esse contexto regional, com ênfase na
+                    segurança dos pescadores e na prevenção de acidentes, foi o principal motivador para o
+                    desenvolvimento deste projeto. O projeto teve como objetivo criar um aplicativo móvel para
+                    melhorar a segurança na navegação de pescadores, prevenindo acidentes por meio de
+                    informações cruciais durante a navegação. O aplicativo foi desenvolvido utilizando dados de
+                    acidentes fornecidos pela Marinha do Brasil e informações de localização em tempo real via
+                    GPS. A metodologia adotada foi dividida em três etapas principais: a coleta e organização dos
+                    dados de acidentes em um banco de dados robusto, a visualização desses dados em um painel
+                    interativo utilizando georreferenciamento, e a implementação do aplicativo para dispositivos
+                    Android. As funcionalidades incluem exibição de latitude e longitude em tempo real, uma
+                    bússola digital integrada aos sensores do dispositivo, alertas preventivos em áreas com
+                    histórico de acidentes e uma função de retorno ao ponto de origem baseada em cálculos de
+                    direção e distância. Os resultados alcançados incluíram a criação de um banco de dados
+                    detalhado com o histórico de acidentes marítimos no Brasil, a construção de um painel visual
+                    interativo para análise geográfica e a implementação de um aplicativo funcional e eficiente,
+                    capaz de melhorar a segurança e proteger vidas durante a navegação. O projeto também
+                    contribuiu para a promoção dos Objetivos de Desenvolvimento Sustentável (ODS),
+                    relacionados à saúde e bem-estar (ODS 3), à vida na água (ODS 14), à inovação e
+                    infraestrutura (ODS 9) e a cidades e comunidades sustentáveis (ODS 11).
+                </p>
+                <p>
+                    Palavras-chave: aplicativo móvel; navegação marítima; georreferenciamento; acidentes;
+                    prevenção.
+                </p>
+            </div>
+
+            <div class="right-side">
+                <div class="video-content">
+                    <video controls>
+                        <source src="assets/project-details-video/project-details-video.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de
+                        vídeo.
+                        <track
+                            kind="subtitles"
+                            srclang="ptbr"
+                            src="assets/project-details-video/project-details-subtitles.vtt"
+                            label="Português">
+                    </video>
+                </div>
+
+                <a href="assets/relatorio-projeto-marseguro.pdf" download>
+                    <button class="btn">
+                        <svg width="140px" height="45px" viewBox="0 0 140 45">
+                            <polyline points="139,1 139,44 1,44 1,1 139,1" />
+                            <polyline points="139,1 139,44 1,44 1,1 139,1" />
+                        </svg>
+                        <span>RELATÓRIO PDF</span>
+                    </button>
+                </a>
+            </div>
+
+        </div>
      </section>
 
     <!-- Footer -->
