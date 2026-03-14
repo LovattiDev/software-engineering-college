@@ -41,7 +41,10 @@
 
 .app-bottom {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .app-image-wrapper {
@@ -71,4 +74,50 @@
 
 .app-image-wrapper:hover .app-main {
     transform: scale(1.25) translateY(-15px);
+}
+
+#app-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-button-link {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all .35s ease;
+}
+
+#app-button-link span {
+    position: relative;
+    z-index: 2;
+}
+
+#app-button-link:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #2f5d6240;
+    transition: width .35s ease;
+    z-index: 1;
+}
+
+#app-button-link:hover {
+    color: #fff;
+}
+
+#app-button-link:hover:after {
+    width: 100%;
 }
